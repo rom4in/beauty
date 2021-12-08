@@ -18,6 +18,8 @@ struct SearchView: View {
                     Image(systemName: "magnifyingglass")
                         .font(.largeTitle)
                         .opacity(0.5)
+                        .frame(height: 400)
+                        .contentShape(Rectangle())
                 } else {
                     
                     LazyVStack {
