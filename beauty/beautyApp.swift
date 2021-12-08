@@ -11,7 +11,7 @@ import SwiftUI
 struct beautyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RouterView()
         }
     }
 }
