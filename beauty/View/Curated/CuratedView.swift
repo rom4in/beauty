@@ -30,8 +30,8 @@ struct CuratedView: View {
                             PhotoView(photo: photo)
                                 .rotation3DEffect(
                                     Angle(degrees: (geometry.frame(in: .global).minY) - 100) / 20,
-                                          axis: (x: 10, y: 50, z: 10))
-                            
+                                    axis: (x: 1, y: 1, z: 1))
+
                         }
                         .frame(width: UIScreen.main.bounds.width - 20)
                         .aspectRatio(photo.ratio, contentMode: .fit)
@@ -39,28 +39,5 @@ struct CuratedView: View {
                 }
             }
         }
-    }
-}
-
-extension CuratedView {
-    class ViewModel: ObservableObject {
-        @Published var photos = [Photo]()
-        static let shared: ViewModel = .init()
-        
-        init() {
-            fetchCuratedPhotos()
-        }
-        
-        func fetchCuratedPhotos() {
-            PexelsAPI.shared.fetchCurated() { results in
-                self.photos = results
-            }
-        }
-    }
-}
-
-struct CuratedView_Previews: PreviewProvider {
-    static var previews: some View {
-        CuratedView()
     }
 }

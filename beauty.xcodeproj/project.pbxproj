@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8AE31F82760B3BE00B72679 /* CuratedView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AE31F72760B3BE00B72679 /* CuratedView+ViewModel.swift */; };
+		E8AE31FC2760B3FF00B72679 /* SearchView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AE31FB2760B3FF00B72679 /* SearchView+ViewModel.swift */; };
+		E8AE31FE2760C21900B72679 /* ARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AE31FD2760C21900B72679 /* ARView.swift */; };
+		E8AE32012760CB5800B72679 /* PhotoNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AE32002760CB5800B72679 /* PhotoNode.swift */; };
 		E8DBAAD9275F9C0400FCE4F0 /* beautyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBAAD8275F9C0400FCE4F0 /* beautyApp.swift */; };
 		E8DBAADB275F9C0400FCE4F0 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBAADA275F9C0400FCE4F0 /* RouterView.swift */; };
 		E8DBAADD275F9C0500FCE4F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8DBAADC275F9C0500FCE4F0 /* Assets.xcassets */; };
@@ -16,7 +20,7 @@
 		E8DBAAED275F9E6300FCE4F0 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBAAEC275F9E6300FCE4F0 /* Photo.swift */; };
 		E8DBAAF0275FA03A00FCE4F0 /* PexelsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBAAEF275FA03A00FCE4F0 /* PexelsAPI.swift */; };
 		E8DBAAF2275FA20500FCE4F0 /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBAAF1275FA20500FCE4F0 /* APIUrls.swift */; };
-		E8DBAAF4275FA77400FCE4F0 /* CuratedResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBAAF3275FA77400FCE4F0 /* CuratedResult.swift */; };
+		E8DBAAF4275FA77400FCE4F0 /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBAAF3275FA77400FCE4F0 /* RequestResult.swift */; };
 		E8DBAAF6275FB27100FCE4F0 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBAAF5275FB27100FCE4F0 /* PhotoView.swift */; };
 		E8DBAAF8275FB2C200FCE4F0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBAAF7275FB2C200FCE4F0 /* Color.swift */; };
 		E8DBAAFC275FC5DD00FCE4F0 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBAAFB275FC5DD00FCE4F0 /* Buttons.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E8AE31F72760B3BE00B72679 /* CuratedView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CuratedView+ViewModel.swift"; sourceTree = "<group>"; };
+		E8AE31FB2760B3FF00B72679 /* SearchView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchView+ViewModel.swift"; sourceTree = "<group>"; };
+		E8AE31FD2760C21900B72679 /* ARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARView.swift; sourceTree = "<group>"; };
+		E8AE32002760CB5800B72679 /* PhotoNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoNode.swift; sourceTree = "<group>"; };
 		E8DBAAD5275F9C0400FCE4F0 /* beauty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beauty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8DBAAD8275F9C0400FCE4F0 /* beautyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = beautyApp.swift; sourceTree = "<group>"; };
 		E8DBAADA275F9C0400FCE4F0 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
@@ -48,7 +56,7 @@
 		E8DBAAEC275F9E6300FCE4F0 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		E8DBAAEF275FA03A00FCE4F0 /* PexelsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsAPI.swift; sourceTree = "<group>"; };
 		E8DBAAF1275FA20500FCE4F0 /* APIUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
-		E8DBAAF3275FA77400FCE4F0 /* CuratedResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratedResult.swift; sourceTree = "<group>"; };
+		E8DBAAF3275FA77400FCE4F0 /* RequestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResult.swift; sourceTree = "<group>"; };
 		E8DBAAF5275FB27100FCE4F0 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		E8DBAAF7275FB2C200FCE4F0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		E8DBAAFB275FC5DD00FCE4F0 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
@@ -69,6 +77,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8AE31F92760B3CF00B72679 /* Curated */ = {
+			isa = PBXGroup;
+			children = (
+				E8DBAAE6275F9C6100FCE4F0 /* CuratedView.swift */,
+				E8AE31F72760B3BE00B72679 /* CuratedView+ViewModel.swift */,
+			);
+			path = Curated;
+			sourceTree = "<group>";
+		};
+		E8AE31FA2760B3F000B72679 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E8DBAAE8275F9C8400FCE4F0 /* SearchView.swift */,
+				E8AE31FB2760B3FF00B72679 /* SearchView+ViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E8AE31FF2760CB4A00B72679 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				E8AE31FD2760C21900B72679 /* ARView.swift */,
+				E8AE32002760CB5800B72679 /* PhotoNode.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
 		E8DBAACC275F9C0400FCE4F0 = {
 			isa = PBXGroup;
 			children = (
@@ -91,12 +126,12 @@
 			children = (
 				E8DBAB2B275FEEC800FCE4F0 /* Launch Screen.storyboard */,
 				E8DBAAD8275F9C0400FCE4F0 /* beautyApp.swift */,
+				E8DBAADC275F9C0500FCE4F0 /* Assets.xcassets */,
 				E8DBAAEE275FA00B00FCE4F0 /* PexelsAPI */,
 				E8DBAAEB275F9C9F00FCE4F0 /* Model */,
 				E8DBAAEA275F9C9300FCE4F0 /* View */,
 				E8DBAAFA275FC5CB00FCE4F0 /* Styles */,
 				E8DBAAF9275FB2D000FCE4F0 /* Extensions */,
-				E8DBAADC275F9C0500FCE4F0 /* Assets.xcassets */,
 				E8DBAADE275F9C0500FCE4F0 /* Preview Content */,
 			);
 			path = beauty;
@@ -114,9 +149,10 @@
 			isa = PBXGroup;
 			children = (
 				E8DBAADA275F9C0400FCE4F0 /* RouterView.swift */,
-				E8DBAAE6275F9C6100FCE4F0 /* CuratedView.swift */,
 				E8DBAAF5275FB27100FCE4F0 /* PhotoView.swift */,
-				E8DBAAE8275F9C8400FCE4F0 /* SearchView.swift */,
+				E8AE31FF2760CB4A00B72679 /* AR */,
+				E8AE31F92760B3CF00B72679 /* Curated */,
+				E8AE31FA2760B3F000B72679 /* Search */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				E8DBAAEC275F9E6300FCE4F0 /* Photo.swift */,
-				E8DBAAF3275FA77400FCE4F0 /* CuratedResult.swift */,
+				E8DBAAF3275FA77400FCE4F0 /* RequestResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,11 +278,15 @@
 				E8DBAADB275F9C0400FCE4F0 /* RouterView.swift in Sources */,
 				E8DBAAF2275FA20500FCE4F0 /* APIUrls.swift in Sources */,
 				E8DBAAFC275FC5DD00FCE4F0 /* Buttons.swift in Sources */,
+				E8AE31FE2760C21900B72679 /* ARView.swift in Sources */,
+				E8AE31FC2760B3FF00B72679 /* SearchView+ViewModel.swift in Sources */,
+				E8AE31F82760B3BE00B72679 /* CuratedView+ViewModel.swift in Sources */,
 				E8DBAAF8275FB2C200FCE4F0 /* Color.swift in Sources */,
 				E8DBAAF6275FB27100FCE4F0 /* PhotoView.swift in Sources */,
+				E8AE32012760CB5800B72679 /* PhotoNode.swift in Sources */,
 				E8DBAAD9275F9C0400FCE4F0 /* beautyApp.swift in Sources */,
 				E8DBAAF0275FA03A00FCE4F0 /* PexelsAPI.swift in Sources */,
-				E8DBAAF4275FA77400FCE4F0 /* CuratedResult.swift in Sources */,
+				E8DBAAF4275FA77400FCE4F0 /* RequestResult.swift in Sources */,
 				E8DBAAE7275F9C6100FCE4F0 /* CuratedView.swift in Sources */,
 				E8DBAAED275F9E6300FCE4F0 /* Photo.swift in Sources */,
 			);
@@ -383,12 +423,11 @@
 				DEVELOPMENT_TEAM = V7S37T583D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "See the photos framed on the wall in AR.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,12 +453,11 @@
 				DEVELOPMENT_TEAM = V7S37T583D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "See the photos framed on the wall in AR.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,7 +9,7 @@ import Foundation
 
 extension PexelsAPI {
     
-    struct CuratedResult: Decodable {
+    struct RequestResult: Decodable {
         var photos: [Photo]?
     }
 }

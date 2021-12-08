@@ -9,9 +9,6 @@ import SwiftUI
 
 struct PhotoView: View {
     
-    private enum ContentType {
-        case ar, image
-    }
     @State var photo: Photo
     @State private var showButtons = false
     @State private var showAR = false
@@ -40,24 +37,21 @@ struct PhotoView: View {
         HStack(spacing: 30) {
             
             Button {
-                shareSheet(type: .image)
+                shareSheet()
             } label: {
                 Image(systemName: "square.and.arrow.up")
             }
+            
             
             Button {
                 showAR = true
             } label: {
                 Image(systemName: "arkit")
-            }.sheet(isPresented: $showAR, onDismiss: { showAR = false }) {
-                Color.blue.ignoresSafeArea()
+            }
+            .sheet(isPresented: $showAR, onDismiss: { showAR = false ; showButtons = false }) {
+                ARView(photo: photo).ignoresSafeArea()
             }
             
-            Button {
-                
-            } label: {
-                Image(systemName: "square.and.arrow.down")
-            }
         }.buttonStyle(PhotoShareButtonStyle())
     }
     
@@ -81,35 +75,26 @@ struct PhotoView: View {
                 
             case .failure(_):
                 ZStack {
-                    Rectangle().foregroundColor(.init(hex: photo.averageColor))
-                    Image(systemName: "wifi.exclamationmark")
+                    Color(hex: photo.averageColor)
+                        .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                    Image(systemName: "square.stack.3d.down.right.fill")
                         .font(.largeTitle)
                 }.aspectRatio(Double(photo.width)/Double(photo.height), contentMode: .fit)
             @unknown default: EmptyView()
             }
         }
-                   .frame(maxWidth: .infinity)
+                  
     }
     
-    private func shareSheet(type: ContentType) {
+    private func shareSheet() {
         
-        var elements = [Any]()
-        
-        switch type {
-        case .image :
-            
                 guard let photoString = photo.src[Photo.Size.large.rawValue],
                       let url = URL(string: photoString ),
                       let image = try? Data(contentsOf: url)
                 else { return }
-                elements.append(image)
-            
-            
-        case .ar :
-            break
-        }
+
         
-        let activityVC = UIActivityViewController(activityItems: elements, applicationActivities: nil)
+        let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
         
         UIApplication.shared.currentUIWindow()?.rootViewController?.present(activityVC, animated: true, completion: nil)
     }

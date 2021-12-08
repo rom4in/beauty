@@ -13,7 +13,7 @@ struct RouterView: View {
         TabView {
             CuratedView()
                 .tabItem {
-                    Image(systemName: "rectangle.stack")
+                    Image(systemName: "square.stack.3d.down.right.fill")
                 }
             SearchView()
                 .tabItem {

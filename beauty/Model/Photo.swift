@@ -5,7 +5,7 @@
 //  Created by Ubicolor on 07/12/2021.
 //
 
-import Foundation
+import UIKit
 
 struct Photo: Identifiable, Decodable, Equatable {
     
@@ -28,4 +28,5 @@ struct Photo: Identifiable, Decodable, Equatable {
     public var ratio : Double {
         Double(width)/Double(height)
     }
+
 }
