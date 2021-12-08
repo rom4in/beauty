@@ -61,7 +61,6 @@
 		E8DBAAF7275FB2C200FCE4F0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		E8DBAAFB275FC5DD00FCE4F0 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		E8DBAAFD275FCD1600FCE4F0 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
-		E8DBAB05275FD3D800FCE4F0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E8DBAB07275FD3D800FCE4F0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		E8DBAB2B275FEEC800FCE4F0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,7 +194,6 @@
 		E8DBAB04275FD3D800FCE4F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E8DBAB05275FD3D800FCE4F0 /* WidgetKit.framework */,
 				E8DBAB07275FD3D800FCE4F0 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
